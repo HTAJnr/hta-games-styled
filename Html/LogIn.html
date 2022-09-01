@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Login </title>
+        <link rel="shortcut icon" href="../Multimedia/Icons/Favicon.ico" type="image/x-icon">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="../Css/Login.css">
+        <script src="../Js/Login.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+               <img src="../Multimedia/Icons/Users.png" class="user" alt="Users_Icon">
+            </div>
+            <div class="main">
+                <form action="index.html">
+                    <span class="Icons">
+                        <i><img src="../Multimedia/Icons/user.svg" class="mainIcon" alt="User_Icon"></i>
+                        <input type="text" id="name" placeholder="Username" title="Digite seu Nome de Usuário" required>
+                    </span> <br/>
+                    <span class="Icons">
+                        <i><img src="../Multimedia/Icons/lock.svg" class="mainIcon" alt="Lock_Icon"></i>
+                        <input type="password" id="senha" placeholder="Password" title="Digite sua Senha" required>
+                    </span>
+                    <span class="forgot">
+                        <input type="checkbox"> Remember me.
+                        <a href="../Html/Esqueceu_Senha.html"><i>Forgot Password?</i></a>
+                    </span><br/>
+                    <button type="submit"  onclick="welcome()"> Login </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

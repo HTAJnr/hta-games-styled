@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    transition: 0.60s ease-in-out;
+}
+
+body {
+    font-family: 'Poppins',sans-serif,'Times New Roman', Times, serif;
+    background-image: url(../Multimedia/Backgrounds/Back\(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.container {
+    width: 580px;
+    margin: 7% auto;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgb(255, 102, 0);
+}
+
+.header {
+    text-align: center;
+    padding: 75px;
+}
+
+.header .user {
+    background-color: rgba(255, 149, 0, 0.5);
+    border-radius: 55px;
+    padding:  5px 5px 5px;
+    padding-bottom: 0px;
+    width: 100px;
+}
+
+.main {
+    text-align: center;
+}
+
+.main input, button {
+    width: 400px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main button {
+    width: 200px;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 0;
+    background-color: orangered;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 70px;
+    box-shadow: 2px 2px 5px 2px #000;
+}
+
+.main button:hover {
+    box-shadow: 2px 2px 5px 5px rgb(13, 197, 47);
+    background-color: #ffff;
+    cursor: pointer;
+}
+.main input {
+    background: rgba(255,255,255,0.8);
+    box-shadow: 2px 2px 5px 2px #000;
+}
+.main input:hover{
+    box-shadow: 2px 2px 5px 2px #555;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.main .Icons {
+    position: relative;
+}
+
+.main .Icons i {
+    position: absolute;
+    left: 15px;
+    color: #333;
+    font-size: 10px;
+    top: 2px;
+}
+
+.mainIcon{
+    height: 15px;
+}
+
+.forgot{
+    display: block;
+}
+
+.main .forgot input {
+    border: none;
+    border-radius: 10px;
+    padding-left: 30px;
+    height: 15px;
+    width: 15px;
+    margin: 1em 0;
+}
+
+
+.forgot a {
+    text-decoration: none;
+    padding-left: 140px;
+    opacity: 60%;
+}
+.forgot a:hover > i {
+    text-decoration: underline;
+    color: aqua;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .Icons i {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .Icons input {
+        width: 70%;
+    }
+
+    .main button {
+        width: 35%;
+    }
+
+    .forgot a {
+        padding-left: 32%;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .forgot a {
+        padding-left: 22%;
+    }
+}
+
+@media (max-width: 600px) {
+    .forgot a {
+        padding-left: 10%;
+    }
+} 
+
+@media (max-width: 510px) {
+    .forgot a {
+       display: block;
+       padding-right: 10%;
+    }
+}

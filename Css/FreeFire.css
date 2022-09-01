@@ -1,0 +1,274 @@
+*{
+    transition: 0.60s ease-in-out;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: antiquewhite;
+}
+body, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: antiquewhite;
+}
+
+body {
+    background-image: url(../Multimedia/Backgrounds/FFBack.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header a img {
+    height: auto;
+    width: 130px;
+}
+
+.title img{
+    width: 280px;
+}
+
+/** Header end **/
+
+/** Menu primary start **/
+
+.menuH ul {
+    display: flex;
+}
+
+.menuH li {
+    margin-left: 12px;
+}
+
+.menuH li a {
+    padding: 10px;
+    color: #0097cc;
+}
+
+.wrapper ul li button {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper ul li button:hover {
+    background: crimson;
+}
+
+.wrapper ul li, ul ul li, .wrapper ul li img {
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+
+.wrapper ul li img {
+    width: 70px;
+    padding-right: 12px;
+    cursor: pointer;
+}
+
+.wrapper ul ul li {
+    background: rgba(0,0,0,0.5);
+    padding-bottom: 40px;
+    height: 20px;
+}
+
+.wrapper ul ul li:hover > a {
+    color: #fe0201;
+}
+
+.wrapper ul ul {
+    display: none;
+}
+
+.wrapper ul li:hover > ul {
+    display: block;
+    transition: 2s ease-in-out;
+}
+/** Menu primary end **/
+
+/** Cards contents start **/
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5%;
+    margin: 2%;
+}
+
+.description {
+    width: 530px;
+    height: 340px;
+    margin: 7% auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgb(231, 144, 5);
+}
+
+.description img {
+    width: 200px;
+}
+
+
+.trailer {
+    width: 530px;
+    height: 340px;
+    margin: 7% auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgb(231, 144, 5);
+}
+
+.trailer p {
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    box-shadow: 0 0 20px rgb(231, 144, 5);
+    border-radius: 10px;
+    color: lightblue;
+}
+
+.trailer video {
+    margin-top: 33px;
+    width: 90%;
+}
+
+.downLink {
+    width: 290px;
+    height: 10px;
+    margin: 5% auto;
+    margin-left: 80%;
+    padding: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgb(231, 144, 5);
+}
+
+.downLink:hover {
+   text-decoration: underline;
+   background-color: rgb(231, 144, 5);
+}
+/** Cards contents end **/
+
+/** Footer start**/
+.copyrigth {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0, 0, 0, 0.6);
+}
+/** Footer end**/
+/** Responsive Start **/
+@media (max-width: 1440px) {
+    .container, .description,
+    .trailer {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .description p {
+        font-size: 16px;
+    }
+    .downLink {
+        margin-bottom: 60px;
+    }
+}
+@media (max-width: 1024px){
+    .container {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 90%;
+    }
+    .description {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .trailer {
+        height: auto;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .trailer video {
+        width: 90%;
+    }
+    .downLink {
+        width: 96%;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .copyrigth {
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .container, .description,
+    .trailer {
+        width: 80%;
+    }
+    .downLink {
+        width: 89%;
+    }
+}
+@media (max-width: 585px) {
+    .title {
+        display: none;
+    }
+    .description p {
+        font-size: 14px;
+    }
+    .copyrigth p strong {
+        display: block;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .header .logo a img {
+        width: 90px;
+    }  
+    .header .menuH img {
+        width: 50px;
+        height: 40px;
+    }
+    .description img {
+        width: 50%;
+    }
+}
+@media (max-width: 375px) {
+    .description p {
+        font-size: 13px;
+    }
+    .copyrigth {
+        font-size: 14px;
+    }
+}
+/** Responsive end **/

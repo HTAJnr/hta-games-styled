@@ -1,0 +1,328 @@
+*{
+    transition: 0.60s ease-in-out;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: antiquewhite;
+}
+body, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: antiquewhite;
+}
+
+body {
+    background-image: url(../Multimedia/Backgrounds/Back\(2\).jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header a img {
+    height: auto;
+    width: 130px;
+}
+
+.title h1{
+    font-size: 40px;
+    margin-bottom: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title i:nth-child(1){
+    font-style: initial;
+    color: #fe0201;
+}
+.title i:nth-child(2){
+    font-style: initial;
+    color: white;
+}
+.title i:nth-child(3){
+    font-style: initial;
+    color: #0097cc;
+}
+.title i:nth-child(4){
+    margin-left: 12px;
+    font-style: initial;
+    color: whitesmoke;
+}
+
+.title p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: 'Bebas Neue';
+    color: whitesmoke;
+}
+/** Header end **/
+
+/** Menu primary start **/
+
+.menuH ul {
+    display: flex;
+}
+
+.menuH li {
+    margin-left: 12px;
+}
+
+.menuH li a {
+    padding: 10px;
+    color: #0097cc;
+}
+
+.wrapper ul li button {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper ul li button:hover {
+    background: crimson;
+}
+
+.wrapper ul li, ul ul li, .wrapper ul li img {
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+
+.wrapper ul li img {
+    width: 70px;
+    padding-right: 12px;
+    cursor: pointer;
+}
+
+.wrapper ul ul li {
+    background: rgba(0,0,0,0.5);
+    padding-bottom: 40px;
+    height: 20px;
+}
+
+.wrapper ul ul li:hover > a {
+    color: #fe0201;
+}
+
+.wrapper ul ul {
+    display: none;
+}
+
+.wrapper ul li:hover > ul {
+    display: block;
+    transition: 2s ease-in-out;
+}
+/** Menu primary end **/
+
+/** Content Main start **/
+.container {
+    width: 920px;
+    height: 540px;
+    margin: 7% auto;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgb(255, 57, 229);
+} 
+.txt {
+    text-align: center;
+}
+.txt img {
+    width: 150px;
+}
+
+.txt strong {
+    color: rgb(57, 231, 57);
+}
+
+.txt i {
+    color: rgb(255, 68, 0);
+    font-style: initial;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.social {
+    width: 320px;
+    height: 140px;
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgb(255, 57, 229);
+}
+
+.social a img , .medias a img {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.medias {
+    width: 300px;
+    height: 140px;
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgb(255, 57, 229);
+}
+
+/** Content Main end **/
+
+/** Footer start**/
+.copyrigth {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0, 0, 0, 0.6);
+}
+/** Footer end**/
+
+/** Responsive start **/
+@media (max-width: 1024px) {
+    .container {
+        width: 80%;
+        height: 80%;
+    }
+    .txt {
+        width: auto;
+    }
+    .txt img {
+        width: 150px;
+    }
+    .txt p {
+        font-size: 25px;
+    }
+    .socialMedia .social {
+        width: 90%;
+        height: 280px;
+    }
+    .socialMedia .medias {
+        position: absolute;
+        margin-top: 160px;
+        width: 70%;
+        box-shadow: none;
+        background-color: unset;
+    }
+    .copyrigth {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .txt p {
+        font-size: 18px;
+    }
+    .socialMedia .medias {
+        width: 70%;
+    }
+}
+
+@media (max-width: 580px) {
+    .title {
+        display: none;
+    }
+    .txt p {
+        font-size: 16px;
+    }
+    .socialMedia .medias {
+        width: 65%;
+    }
+    .copyrigth div p strong {
+        display: block;
+    }
+}
+@media (max-width: 425px) {
+    .container {
+        width: 60%;
+    }
+    .socialMedia {
+        display: block;
+        margin-right: 50px;
+    }
+    .socialMedia .social {
+        height: 20%;
+    }
+    .socialMedia .medias {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        width: 90%;
+        height: auto;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 20px rgb(255, 57, 229);
+    }
+    .socialMedia .social a img,  
+    .socialMedia .medias a img  {
+        width: 50px;
+    }
+}
+@media (max-width: 375px) {
+    .socialMedia .social p, 
+    .socialMedia .medias p {
+        font-size: 11px;
+    }
+    .socialMedia .social a img, 
+    .socialMedia .medias a img {
+        width: 30px;
+    }
+    .medias  a img{
+        margin-left: 10px;
+    }
+    .medias  p{
+        margin-left: 10px;
+    }
+    .copyrigth {
+        font-size: 14px;
+    }
+}
+@media (max-width: 320px) {
+    .header .logo a img {
+        width: 90px;
+    }  
+    .header .menuH img {
+        width: 50px;
+        height: 40px;
+    }
+    .socialMedia .social a img, 
+    .socialMedia .medias a img {
+        width: 25px;
+    }
+    .socialMedia .social, 
+    .socialMedia .medias {
+        width: 0 auto;
+    }
+    .socialMedia .social p, 
+    .socialMedia .medias p {
+        font-size: 10px;
+    }
+}
+/** Responsive end **/
