@@ -154,8 +154,8 @@ a {
     color: lightblue;
 }
 
-.trailer video {
-    margin-top: 66px;
+.trailer iframe {
+    margin-top: 22px;
     width: 90%;
 }
 
@@ -219,7 +219,7 @@ a {
         margin: 0 auto;
         margin-top: 40px;
     }
-    .trailer video {
+    .trailer iframe {
         width: 90%;
     }
     .downLink {
