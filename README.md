@@ -97,7 +97,19 @@ hta-games-v2/
 - Performance otimizada
 
 ### Método 2: Abertura Direta
-- Abra o arquivo `index.html` diretamente no navegador
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/HTAJnr/hta-games-basic.git
+   ```
+
+2. **Navegue até a pasta**
+   ```bash
+   cd hta-games-styled
+   ```
+
+3. **Abra no navegador**
+   - Abra o arquivo `index.html` em qualquer navegador web moderno
 
 ## 🎯 Melhorias da Versão V2
 
